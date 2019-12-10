@@ -113,9 +113,10 @@ Baby.prototype.play = function() {
 
   In your own words explain the four principles for the "this" keyword below:
   1. 'this' in a function references the execution context for that call.
-  2. To figure out what is the context of this we need to look at the calling site.
-  3. 'this' without any specific context, it points to the global object "Window"
-  4. When using the strict mode, using this without a context will be assigned undefined
+  2. Explicit binding. 'this' context points to the first argument passed which is usually an object.
+  3. Using 'this' with new keyword, it points to a new object context.
+  4. Global or window context. Using 'this' without giving it a context, 
+  it'll point to the global object except when using the strict mode 'this' is set to undefined.
 */
 
 
